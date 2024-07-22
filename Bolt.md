@@ -147,8 +147,6 @@ msf6 exploit(unix/webapp/bolt_authenticated_rce) > run
 whoami
 root
 
-cat flag.txt
-THM{wh0_d035nt_l0ve5_b0l7_r1gh7?}
 </pre>
 
 
